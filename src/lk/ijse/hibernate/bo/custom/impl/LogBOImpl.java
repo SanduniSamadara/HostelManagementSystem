@@ -1,0 +1,27 @@
+package lk.ijse.hibernate.bo.custom.impl;
+
+import lk.ijse.hibernate.bo.custom.LogBO;
+import lk.ijse.hibernate.dao.DAOFactory;
+import lk.ijse.hibernate.dao.custom.UserDAO;
+import lk.ijse.hibernate.dto.UserDTO;
+import lk.ijse.hibernate.entity.User;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LogBOImpl implements LogBO {
+    private final UserDAO userDAO = (UserDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.USER);
+
+    @Override
+    public List<UserDTO> getUserDetails(String userName, String pwd) throws Exception {
+
+        List<User> list = userDAO.getUserDetails(userName, pwd);
+        List<UserDTO> userDTOS = new ArrayList<>();
+        for (User user:list
+        ) {
+            userDTOS.add(new UserDTO(user.getUserId(),user.getName(),user.getTelNo(),user.getEmail(),user.getUserName(),user.getPassword()));
+        }
+        return userDTOS;
+
+    }//ayye t\mm tikkt ynw oya ok krnn imknt ennm hrid ha haa nngi
+}

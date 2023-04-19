@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardFormContext" prefHeight="706.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#354c61" height="706.0" stroke="BLACK" strokeType="INSIDE" width="1055.0" />
+      <ImageView fitHeight="72.0" fitWidth="297.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assessts/images/ogimage1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e3451" height="543.0" layoutX="238.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="815.0" />
+      <Label layoutX="393.0" layoutY="23.0" prefHeight="21.0" prefWidth="79.0" text="Date:" textFill="#eee8e8">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="456.0" layoutY="25.0" text="2023.04.02" textFill="#eee8e8">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="705.0" layoutY="25.0" text="Time:" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="772.0" layoutY="28.0" text="19:23:00" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="635.0" pickOnBounds="false" prefHeight="50.0" prefWidth="323.0" text="Developed By Samadara Munasinghe" textFill="#f8f1f1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="144.0" onAction="#studentRegistrationOnAction" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: #273c75;" text="     Student Registration" textFill="#f2eaea">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assessts/images/online-voting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="297.0" onAction="#studentManagementOnAction" prefHeight="42.0" prefWidth="221.0" style="-fx-background-color: #273c75;" text=" Student Management" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assessts/images/std.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="222.0" onAction="#roomManagementOnAction" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: #273c75;" text="Room Management" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assessts/images/room.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="439.0" onAction="#userManagementOnAction" prefHeight="34.0" prefWidth="221.0" style="-fx-background-color: #273c75;" text="   User Management" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assessts/images/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="375.0" onAction="#KeyMoneyPendingOnAction" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: #273c75;" text="   Key Money Pending" textFill="#f5f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assessts/images/keymoney.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" cache="true" layoutX="924.0" layoutY="642.0" onAction="#btnLogOutOnAction" prefHeight="50.0" prefWidth="117.0" style="-fx-background-color: #718093;" text="  LogOut" textFill="#1e1919">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
